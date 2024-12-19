@@ -17,7 +17,7 @@ Această aplicație web permite acordarea de **feedback continuu** pentru activi
 ## Tehnologii Utilizate
 
 - **Back-End**: Node.js cu Express.js pentru API-ul RESTful.
-- **Bază de date**: MongoDB pentru stocarea activităților și feedback-ului.
+- **Bază de date**: MongoDB pentru stocarea activităților și feedback-ului, prin configurarea si utilizarea MongoAtlas.
 - **Front-End**: HTML, CSS și React.js pentru interfața SPA.
 
 ## Instalare și Rulare
@@ -30,10 +30,9 @@ Clonează proiectul pe mașina ta locală și navighează în directorul proiect
 
 ### 2. Configurarea Backend-ului (Node.js + MongoDB)
 
-Accesează directorul în care se află backend-ul aplicației și instalează dependențele necesare.
+Folositi comanda cd Proiect_TW_VTU in terminal.
+Folositi comanda npm install pentru a instala dependentele necesare proiectului.
 
-Asigură-te că ai **MongoDB** instalat local sau folosești **MongoDB Atlas** (cloud). Dacă folosești MongoDB local, pornește serverul MongoDB.
-
-Rularea serverului backend:
+Rulati aplicatia.
 
 Serverul va rula pe `http://localhost:5000`.
