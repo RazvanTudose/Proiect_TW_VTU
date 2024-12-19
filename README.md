@@ -22,17 +22,18 @@ Această aplicație web permite acordarea de **feedback continuu** pentru activi
 
 ## Instalare și Rulare
 
-Urmează pașii de mai jos pentru a configura și rula aplicația pe mașina ta locală.
+Urmati pașii de mai jos pentru a configura și rula aplicația pe mașina dumneavoastra locală.
 
 ### 1. Clonarea Repozitoriului
 
-Clonează proiectul pe mașina ta locală și navighează în directorul proiectului.
+Clonati proiectul pe mașina dumneavoastra locală și navigati în directorul proiectului.
+Folositi comanda **git clone https://github.com/RazvanTudose/Proiect_TW_VTU.git**
 
 ### 2. Configurarea Backend-ului (Node.js + MongoDB)
 
-Folositi comanda cd Proiect_TW_VTU in terminal.
-Folositi comanda npm install pentru a instala dependentele necesare proiectului.
+Folositi comanda **cd Proiect_TW_VTU** in terminal.
+Folositi comanda **npm install** pentru a instala dependentele necesare proiectului.
+Folositi comanda **node backend/server.js** pentru a rula aplicatia.
 
-Rulati aplicatia.
 
 Serverul va rula pe `http://localhost:5000`.
