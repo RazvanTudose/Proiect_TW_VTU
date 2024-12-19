@@ -9,14 +9,17 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// Conectarea la baza de date MongoDB
-mongoose.connect('mongodb://localhost:27017/feedbackApp', {
+// Conectarea la baza de date MongoDB Atlas
+const dbURI = 'mongodb+srv://razvan2810:mongodbTW@cluster0.0tfgf.mongodb.net/feedbackApp?retryWrites=true&w=majority';
+
+mongoose.connect(dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(() => console.log('Conectat la MongoDB!'))
-  .catch(err => console.log('Eroare conectare MongoDB: ', err));
+})
+.then(() => console.log('Conectat la MongoDB Atlas!'))
+.catch(err => console.log('Eroare conectare MongoDB: ', err));
 
-// Schema pentru activitati
+// Schema pentru activități
 const activitySchema = new mongoose.Schema({
     code: { type: String, required: true, unique: true },
     description: String,
@@ -79,10 +82,10 @@ app.get('/api/feedback/:activityCode', async (req, res) => {
     }
 });
 
-// fisierele statice din folderul frontend
+// Fisierele statice din folderul frontend
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-// index.html ca fisier principal
+// Index.html ca fisier principal
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
 });
